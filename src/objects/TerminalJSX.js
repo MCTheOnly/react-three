@@ -1,8 +1,8 @@
-import { Html } from "@react-three/drei"
 import { useRef } from 'react';
+import * as THREE from 'three'
+import { Html } from "@react-three/drei"
 import Terminal from '../models/terminal/Terminal'
 import PanelIO from '../JSX3D/PanelIO';
-import * as THREE from 'three'
 
 
 const TerminalJSX = (props) => {

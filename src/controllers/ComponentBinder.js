@@ -1,7 +1,7 @@
-import Screen from "../objects/Screen";
-import TerminalJSX from "../objects/TerminalJSX";
-import { useState } from "react";
-import AnimationStateProvider from "../providers/AnimationStateProvider";
+import Screen from "../objects/Screen"
+import TerminalJSX from "../objects/TerminalJSX"
+import { useState } from "react"
+import AnimationStateProvider from "../providers/AnimationStateProvider"
 
 const ComponentBinder = () => {
 

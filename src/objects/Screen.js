@@ -1,6 +1,5 @@
 import ScreenJSX from "../JSX3D/ScreenJSX"
 import { Html } from "@react-three/drei"
-import Terminal from '../models/terminal/Terminal'
 import { useRef, useState } from "react"
 
 const Screen = (props) => {

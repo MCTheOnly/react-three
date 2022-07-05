@@ -1,5 +1,3 @@
-import { useState, useRef, useEffect } from "react";
-
 const ScreenJSX = (props) => {
 
 	return (

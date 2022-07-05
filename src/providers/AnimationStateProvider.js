@@ -1,18 +1,17 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useReducer } from "react";
 
-export const AnimationStateContext = createContext()
+export const AnimationStateContext = createContext(null)
 export const SetAnimationStateContext = createContext()
 
-export function useAnimationState() {
-	return useContext(AnimationStateContext)
-}
+// export function useAnimationState() {
+// 	return useContext(AnimationStateContext)
+// }
 
+// export function useSetAnimationState() {
+// 	return useContext(SetAnimationStateContext)
+// }
 
-export function useSetAnimationState() {
-	return useContext(SetAnimationStateContext)
-}
- 
-export default function AnimationStateProvider({ children }) {
+export default function AnimationStateProvider() {
 
 	const [animationState, setAnimationState] = useState(false)
 
@@ -22,8 +21,7 @@ export default function AnimationStateProvider({ children }) {
 
 	return (
 		<AnimationStateContext.Provider value={animationState}>
-			<SetAnimationStateContext.Provider value={toggleAnimationState}>
-				{children}
+			<SetAnimationStateContext.Provider value={toggleAnimationState} >
 			</SetAnimationStateContext.Provider>
 		</AnimationStateContext.Provider>
 	);
